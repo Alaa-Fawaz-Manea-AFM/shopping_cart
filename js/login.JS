@@ -7,11 +7,3 @@ login_btn.addEventListener("submit", function (e) {
   localStorage.setItem("user", JSON.stringify({ email, password }));
   window.location.href = "index.html";
 });
-
-
- if (
-   window.location.pathname === "/login.html" &&
-   localStorage?.getItem("user")
- ) {
-   window.location.href = "index.html";
- }
