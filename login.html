@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="flex items-center justify-center h-[80vh]">
+      <div
+        class="_shadow max-w-96 w-full py-10 flex flex-col items-center justify-center gap-5 rounded-md"
+      >
+        <h2 class="font-bold text-3xl">Login</h2>
+        <form id="loginForm" class="space-y-5">
+          <div class="flex flex-col gap-1 w-[100%]">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              required
+              class="border-green-500 border-2 rounded-md outline-none px-2 py-1"
+            />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              required
+              class="border-green-500 border-2 rounded-md outline-none px-2 py-1"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-green-500 w-full py-2 rounded-md hover:opacity-75"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="./js/login.JS"></script>
+  </body>
+</html>
